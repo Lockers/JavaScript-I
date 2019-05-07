@@ -17,7 +17,17 @@ const example = {
   "gender": "F"
 }
 
+
 // Write your intern objects here:
+
+const internObj = [
+  {"id": 0, "name": "Mitzi", "email": "mmelloy@PushSubscription.edu", "gender": "F"},
+  {"id": 1, "name": "Kennan", "email": "kdiben1@tinypic.com", "gender": "M", speak: () => "Hello, my name is Keenan" },
+  {"id": 2, "name": "Keven", "email": "kmummery2@wikimedia.org", "gender": "M"},
+  {"id": 3, "name": "Gannie", "email": "gmartinson3@illinois.edu", "gender": "M"},
+  { "id": 4, "name": "Antonietta", "email": "adaine5@samsung.com", "gender": "F", multiplyNums: (param1, param2) => param1 + param2 }
+]
+
 
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -25,20 +35,34 @@ const example = {
 
 // Mitzi's name
 
+console.log(internObj[0].name)
+
 // Kennan's ID
+
+console.log(internObj[1].id)
 
 // Keven's email
 
+console.log(internObj[2].email)
+
 // Gannie's name
+
+console.log(internObj[3].name)
 
 // Antonietta's Gender
 
+console.log(internObj[4].gender)
+
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+
+console.log(internObj[1].speak())
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+
+console.log(internObj[4].multiplyNums(3, 4))
+
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
